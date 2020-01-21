@@ -29,6 +29,7 @@ MainWindow::~MainWindow()
 
         ui->customPlot->addGraph();
         ui->customPlot->graph(0)->setData(x, y);
+        ui->customPlot->graph(0)->setName("hello!");
         ui->customPlot->graph(0)->setPen(QPen(Qt::green));
         ui->customPlot->graph(0)->setLineStyle(QCPGraph::lsLine);
         ui->customPlot->graph(0)->setScatterStyle(QCPScatterStyle(QCPScatterStyle::ssCircle, 10));
